@@ -13,6 +13,7 @@ return new class extends Migration
     {
         Schema::create('schoolclasses', function (Blueprint $table) {
             $table->id();
+            $table->string('osztalyNev', 10)->notNull();
             $table->timestamps();
         });
     }
